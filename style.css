@@ -1,0 +1,169 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    background: url("Resources/Warp-1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .spacer {
+    clear:both;
+    border:none;
+    width:100%;
+  }
+
+  .header {
+    /* position: fixed; */
+    float: top;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: +2;
+  }
+
+  .logo {
+    font-size: 36px;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .navbar a {
+    position: relative;
+    font-size: 15px;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.container-One {
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: row;
+    gap: 100px;
+    position: relative;
+    padding: 15px;
+}
+.myImage {
+    border: dashed blueviolet 3px;
+    border-radius: 360px;
+    height: 350px; 
+    width: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+
+}
+.aboutMe .myImage {
+    flex-direction: row;
+    z-index: +2;
+    font-family: "Poppins", sans-serif;
+    color: brown;
+    font-size: 16px;
+}
+
+.aboutMe {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container-Two {
+    display: grid;
+    height: 450px;
+    width: 600px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: +1;
+    border-radius: 5px;
+}
+
+.one {
+    background-image: url("Resources/canon.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.two {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+}
+.three {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+}
+.four {
+    background-image: url("Resources/event.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.five {
+    background-image: url("Resources/web.png");
+    background-size: cover;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.six {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+}
+
+.list {
+    
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
